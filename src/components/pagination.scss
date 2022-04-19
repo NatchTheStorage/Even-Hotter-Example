@@ -1,0 +1,80 @@
+.pagination__controls {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  @include media($breakpoint-large) {
+    margin-top: 10px;
+  }
+}
+
+.pagination__button {
+  background: none;
+  border: none;
+  display: flex;
+  opacity: 40%;
+
+  &.pagination__button--active {
+    display: flex;
+    opacity: 100%;
+  }
+}
+
+.pagination__previous {
+  transform: rotate(180deg);
+}
+
+.pagination__current {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.c-pagination-link {
+  margin-left: 6px;
+  margin-right: 6px;
+  text-decoration: none;
+}
+
+.c-pagination-index {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--theme-primary);
+
+  &.active {
+    outline: 3px solid var(--theme-secondary);
+  }
+}
+
+.c-pagination-arrow {
+  width: 8px;
+  height: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 15px 20px;
+  @include media($breakpoint-medium) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @include media($breakpoint-large) {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+
+  &.rotateleft {
+    transform: rotate(180deg);
+  }
+
+  &.disabled {
+    opacity: 20%;
+  }
+}
+
+.pagination-navigator {
+  display: flex;
+  justify-content: center;
+}

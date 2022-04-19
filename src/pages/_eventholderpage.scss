@@ -1,0 +1,113 @@
+.page_eventsholder {
+  width: 100%;
+}
+
+.eventsholder__filter {
+  width: 100%;
+  background-color: #f7f7f7;
+
+  label {
+    @extend .body-copy;
+
+    margin-bottom: 11px;
+  }
+}
+
+.eventsholder__filter-inner {
+  @extend .u-container;
+
+  padding-top: 40px;
+  padding-bottom: 45px;
+  @include media($breakpoint-medium) {
+    display: flex;
+  }
+}
+
+.eventsholder__filter-title {
+  @extend .h2;
+
+  color: var(--theme-primary);
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.eventsholder__filter-unit {
+  margin-bottom: 0;
+}
+
+.eventsholder__filter-button {
+  @extend .c-button;
+
+  width: 100%;
+  height: 68px;
+  @include media($breakpoint-medium) {
+    align-self: center;
+    transform: translateY(6px);
+  }
+}
+
+.eventsholder__filter-title,
+.eventsholder__filter-unit,
+.eventsholder__filter-button {
+  @include media($breakpoint-medium) {
+    width: 25%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.eventsholder__events {
+  @extend .u-container;
+
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  @include media($breakpoint-medium) {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+  @include media($breakpoint-large) {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+}
+
+.eventsholder__events-list {
+  text-align: left;
+  padding-bottom: 40px;
+  @include media($breakpoint-medium) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    padding-bottom: 60px;
+  }
+  @include media($breakpoint-large) {
+    margin: 0 -15px;
+    padding-bottom: 80px;
+  }
+}
+
+.eventsholder__events-seemore {
+  @extend .item-button, .c-button, .c-button--outlined;
+
+  border-color: $color-grey-darkest;
+  color: $color-grey-darkest;
+  text-transform: uppercase;
+  width: 100%;
+  @include media($breakpoint-medium) {
+    width: 50%;
+  }
+  @include media($breakpoint-large) {
+    width: 33%;
+  }
+
+  &.hide {
+    display: none;
+  }
+}
+
+#eventslocation,
+#eventsdate {
+  @extend .body-copy;
+}

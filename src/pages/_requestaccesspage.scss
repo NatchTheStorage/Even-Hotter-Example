@@ -1,0 +1,48 @@
+.page__requestaccess {
+  width: 100%;
+}
+
+.requestaccess__form {
+  @extend .u-container;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include media($breakpoint-medium) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include media($breakpoint-large) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.requestaccess__form-title {
+  @extend .h1;
+
+  text-transform: uppercase;
+}
+
+.requestaccess__form-blurb {
+  @extend .body-copy;
+}
+
+// form itself
+
+.requestaccessform-label {
+  @extend .body-copy;
+}
+
+#Form_RequestAccessForm_Option {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+
+  label {
+    @extend .body-copy;
+  }
+
+  li {
+    padding-right: 20px;
+  }
+}

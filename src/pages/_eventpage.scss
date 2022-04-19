@@ -1,0 +1,117 @@
+.page__event {
+  @extend .u-container;
+
+  width: 100%;
+  @include media($breakpoint-large) {
+    padding-right: 340px;
+  }
+}
+
+.event-hero {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+.event-title {
+  @extend .hero-title;
+
+  text-transform: uppercase;
+}
+
+// details box ========================================================================================================
+
+.event-details {
+  background-color: $color-grey-lightest;
+  padding: 26px 25px 29px;
+  margin-left: -25px;
+  margin-right: -25px;
+  @include media($breakpoint-medium) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include media($breakpoint-large) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.event-details-inner {
+
+  @include media($breakpoint-medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.event-date {
+  @extend .h2;
+
+  text-transform: uppercase;
+  color: var(--theme-primary);
+  margin-bottom: 10px;
+  @include media($breakpoint-medium) {
+    margin-bottom: 15px;
+  }
+}
+
+.event-location {
+  @extend .h3;
+
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  @include media($breakpoint-medium) {
+    margin-bottom: 0;
+  }
+}
+
+.event-detaillink {
+  @extend .c-button, .item-button;
+
+  text-transform: uppercase;
+  width: 100%;
+  @include media($breakpoint-medium) {
+    width: 270px;
+    height: fit-content;
+  }
+}
+
+//  ====================================================================================================================
+
+.event-content {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  @include media($breakpoint-medium) {
+    padding-bottom: 90px;
+  }
+  @include media($breakpoint-large) {
+    padding-bottom: 120px;
+  }
+}
+
+.event-image {
+  margin-bottom: 30px;
+}
+
+.event-text {
+  @extend .body-copy;
+
+  margin-bottom: 30px;
+  @include media($breakpoint-medium) {
+    margin-bottom: 45px;
+  }
+  @include media($breakpoint-large) {
+    margin-bottom: 60px;
+  }
+}
+
+.event-link {
+  @extend .c-button, .item-button;
+
+  text-transform: uppercase;
+  width: 100%;
+  @include media($breakpoint-medium) {
+    width: 40%;
+  }
+}

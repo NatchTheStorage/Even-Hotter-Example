@@ -1,0 +1,72 @@
+.page__shop {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  @include media($breakpoint-large) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  @include media($breakpoint-large) {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+}
+
+.shop__intro {
+  @extend .u-container;
+
+  padding-bottom: 40px;
+  @include media($breakpoint-medium) {
+    padding-bottom: 60px;
+  }
+  @include media($breakpoint-large) {
+    padding-bottom: 80px;
+    padding-right: 400px;
+  }
+}
+
+.shop__intro-title {
+  @extend .h1;
+
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.shop__intro-content {
+  @extend .body-copy;
+}
+
+.shopify-buy__product {
+  width: 100%;
+  @include media($breakpoint-medium) {
+    width: 50%;
+  }
+  @include media($breakpoint-large) {
+    width: calc(100% / 3);
+  }
+}
+
+.shop__items {
+  @extend .u-container;
+}
+
+.shop__itemlist {
+  margin: -15px;
+  @include media($breakpoint-medium) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.shop__item {
+  width: 100%;
+  margin-bottom: 40px;
+  @include media($breakpoint-medium) {
+    width: 50%;
+    padding: 10px;
+  }
+  @include media($breakpoint-large) {
+    width: calc(100% / 3);
+    padding: 15px;
+  }
+}

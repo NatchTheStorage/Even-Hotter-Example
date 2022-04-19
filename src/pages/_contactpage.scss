@@ -1,0 +1,30 @@
+.contactform {
+  .contactform-title {
+    @extend .h1;
+
+    text-transform: uppercase;
+  }
+
+  .contactform-content {
+    @extend .body-copy;
+  }
+
+  #Form_ContactForm {
+    max-width: 600px;
+  }
+
+  .action {
+    @extend .c-button;
+
+    width: 100%;
+    @include media($breakpoint-medium) {
+      max-width: 270px;
+    }
+  }
+
+  .text,
+  label,
+  .textarea {
+    @extend .body-copy;
+  }
+}

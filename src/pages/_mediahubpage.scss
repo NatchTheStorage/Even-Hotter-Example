@@ -1,0 +1,159 @@
+.page__mediahub {
+  width: 100%;
+}
+
+// intro block =========================================================================================================
+
+.mediahub__intro {
+  @extend .element__textimage, .u-container;
+
+  margin: auto !important;
+  padding-bottom: 40px;
+  max-width: 1440px !important;
+  @include media($breakpoint-large) {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.mediahub__intro-text {
+  padding-top: 40px;
+  @include media($breakpoint-medium) {
+    padding-bottom: 60px;
+  }
+  @include media($breakpoint-large) {
+    padding: 100px 20px 100px 135px;
+    width: 50%;
+  }
+}
+
+.mediahub__intro-title {
+  @extend .textimage__title;
+}
+
+.mediahub__intro-content {
+  @extend .textimage__content;
+
+  margin-bottom: 30px;
+  @include media($breakpoint-medium) {
+    margin-bottom: 40px;
+  }
+  @include media($breakpoint-large) {
+    padding-right: 115px;
+    margin-bottom: 50px;
+  }
+}
+
+.mediahub__intro-link {
+  @extend .c-button;
+
+  margin-bottom: 30px;
+  width: 100%;
+  @include media($breakpoint-medium) {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  @include media($breakpoint-large) {
+    margin-bottom: 50px;
+  }
+}
+
+.mediahub__intro-image {
+  @extend .textimage__image;
+
+  padding-bottom: 0 !important;
+  @include media($breakpoint-large) {
+    width: 50%;
+    margin-bottom: 0 !important;
+  }
+}
+
+// Links block =========================================================================================================
+
+.mediahub__linksblock {
+  background-color: $color-grey-lightest;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  @include media($breakpoint-medium) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  @include media($breakpoint-large) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+}
+
+.mediahub__linksblock-inner {
+  @extend .u-container;
+
+  @include media($breakpoint-large) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.mediahub__linksblock-content {
+  a {
+    text-decoration: none;
+  }
+
+  @include media($breakpoint-large) {
+    width: 50%;
+  }
+}
+
+.mediahub__linksblock-linklist {
+  @include media($breakpoint-medium) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  @include media($breakpoint-large) {
+    width: 50%;
+  }
+}
+
+.mediahub__linksblock-link {
+  @extend .c-button;
+
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 20px;
+  @include media($breakpoint-medium) {
+    width: calc(50% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+// download cards
+.mediahub__downloads {
+  @extend .u-container;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include media($breakpoint-medium) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include media($breakpoint-large) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.mediahub__downloads-list {
+  @include media($breakpoint-medium) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  @include media($breakpoint-large) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}

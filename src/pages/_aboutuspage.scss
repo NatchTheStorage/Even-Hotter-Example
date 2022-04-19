@@ -1,0 +1,190 @@
+.page__aboutus {
+  width: 100%;
+
+  .sectiontitle {
+    @extend .h1;
+
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @include media($breakpoint-medium) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.aboutus__main {
+  @extend .u-container;
+
+  @include media($breakpoint-laptop) {
+    margin: auto;
+    max-width: 1440px;
+    padding-right: 0;
+  }
+}
+
+.aboutus__flexbox {
+  padding-bottom: 40px;
+  @include media($breakpoint-medium) {
+    padding-bottom: 60px;
+  }
+  @include media($breakpoint-laptop) {
+    display: flex;
+    padding-bottom: 80px;
+  }
+}
+
+.aboutus__main-title {
+  @extend .h1;
+
+  text-transform: uppercase;
+}
+
+.aboutus__main-content {
+  @extend .body-copy;
+
+  margin-bottom: 30px;
+  @include media($breakpoint-medium) {
+    margin-bottom: 40px;
+  }
+  @include media($breakpoint-large) {
+    margin-bottom: 50px;
+  }
+}
+
+.aboutus__main-link {
+  margin-bottom: 30px;
+
+  @include media($breakpoint-medium) {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  @include media($breakpoint-large) {
+    margin-bottom: 50px;
+  }
+}
+
+.aboutus__main-textbutton {
+  @include media($breakpoint-laptop) {
+    width: 50%;
+    padding-right: 20px;
+  }
+}
+
+.aboutus__main-image {
+  width: 100%;
+  @include media($breakpoint-laptop) {
+    width: 50%;
+    padding-left: 20px;
+  }
+}
+
+.aboutus__team {
+  @extend .u-container;
+
+  padding-bottom: 40px;
+  @include media($breakpoint-medium) {
+    padding-bottom: 50px;
+  }
+  @include media($breakpoint-large) {
+    padding-bottom: 70px;
+  }
+}
+
+.aboutus__team-title {
+  @extend .h1;
+
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  @include media($breakpoint-medium) {
+    margin-bottom: 60px;
+  }
+}
+
+.aboutus__members {
+  @include media($breakpoint-medium) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.aboutus__aircraft {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $color-grey-lightest;
+}
+
+.aboutus__aircraft-inner {
+  @extend .u-container;
+}
+
+.aboutus__aircraft-title {
+  @extend .sectiontitle;
+}
+
+// CREW ================================================================================================================
+
+.aboutus__crew {
+  @extend .u-container;
+
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  @include media($breakpoint-medium) {
+    margin-bottom: 60px;
+  }
+  @include media($breakpoint-large) {
+    margin-bottom: 100px;
+  }
+}
+
+.aboutus__crew-title {
+  @extend .sectiontitle;
+}
+
+.aboutus__crew-contenttitle {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.aboutus__crew-contentdescription {
+  @extend .body-copy;
+
+  margin-bottom: 30px;
+  @include media($breakpoint-medium) {
+    margin-bottom: 40px;
+  }
+  @include media($breakpoint-large) {
+    margin-bottom: 50px;
+    width: 70%;
+  }
+}
+
+.aboutus__crewlist {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 20px;
+  @include media($breakpoint-medium) {
+    margin-left: -13px;
+    margin-right: -13px;
+    margin-bottom: 40px;
+  }
+}
+
+// history
+
+.aboutus__elemental {
+  margin-bottom: 40px;
+  @include media($breakpoint-medium) {
+    margin-bottom: 80px;
+  }
+  @include media($breakpoint-large) {
+    max-width: none;
+    margin-bottom: 100px;
+    padding-right: 0;
+  }
+}
